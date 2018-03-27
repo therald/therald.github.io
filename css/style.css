@@ -5,8 +5,60 @@ html {
 body {
   height: 100%;
   margin: 0;
+
   background-repeat: no-repeat;
   background-attachment: fixed;
-
   background: linear-gradient(#336831, #4C8A4A);
+
+  color: white;
+  font-family: sans-serif;
 }
+
+.left {
+  float: left;
+    width: 30%;
+    margin-left: 20px;
+    margin-top:  20px;
+    padding-right: 20px;
+    border-right:  1px solid white;
+    text-align: center;
+}
+
+#img_div {
+  display: inline-block;
+}
+
+#img_div img {
+  width: 250px;
+}
+
+#name {
+  width: 235px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 36px;
+}
+
+#bio {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo_div {
+  width: 60px;
+  display: inline-block;
+  text-align: center;
+}
+
+.logo_img {
+  width: 40px;
+}
+
+
+
+
+
+
+

@@ -30,6 +30,7 @@ body {
 
 .language_col {
   width: 40%;
+  margin-left: 0px;
 }
 
 .contact_card {
@@ -45,6 +46,7 @@ body {
 
 .projects {
   width: 40%;
+  margin-top: 0px;
 }
 
 .project_image {
@@ -54,6 +56,10 @@ body {
 
 #img_div {
   display: inline-block;
+}
+
+h1 {
+  margin-bottom: 8px;
 }
 
 h4 {

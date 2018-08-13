@@ -4,17 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 function begin() {
 	var mainPage = document.getElementById("main_page");
-	var xhr = new XMLHttpRequest();
-
-	xhr.onload = function () {
-        mainPage.innerHTML = this.response;
-    };
-
-    var locationSub = window.location.href;
-    locationSub = locationSub.substring(0, locationSub.lastIndexOf('/'));
-
-    xhr.open('GET', locationSub + '/pages/about_me.html', true);
-    xhr.send();
+	//loadMainPage("about_me.html");
 
 	document.getElementById('hamburger_menu').onclick = function(e) {
 		fadeContent(true);
@@ -44,7 +34,76 @@ function begin() {
 		buttonClicked(e, closeButton);
 	};
 
+	//drawer links
+	document.getElementById('about_link').onclick = function(e) {
+		if (!checkActive(this)) {
+			loadMainPage("about_me.html");
+		}
+
+		fadeContent(true);
+
+		var drawer = document.getElementById("drawer");
+		drawer.style.left = "0";
+
+		var closeButton = document.getElementById("close_hamburger_menu");
+		buttonClicked(e, closeButton);
+	};
+
+	document.getElementById('portfolio_link').onclick = function(e) {
+		if (!checkActive(this)) {
+			loadMainPage("portfolio.html");
+		}
+
+		fadeContent(true);
+
+		var drawer = document.getElementById("drawer");
+		drawer.style.left = "0";
+
+		var closeButton = document.getElementById("close_hamburger_menu");
+		buttonClicked(e, closeButton);
+	};
+
+	document.getElementById('resume_link').onclick = function(e) {
+		if (!checkActive(this)) {
+			loadMainPage("resume.html");
+		}
+
+		fadeContent(true);
+
+		var drawer = document.getElementById("drawer");
+		drawer.style.left = "0";
+
+		var closeButton = document.getElementById("close_hamburger_menu");
+		buttonClicked(e, closeButton);
+	};
+
 	return false;
+}
+
+function checkActive(element) {
+	var classes = element.classList;
+	var hasClass = false;
+	for (var i = 0; i < classes.length; i++) {
+		if (classes[i] == "active_link") {
+			hasClass = true;
+		}
+	}
+
+	return hasClass;
+}
+
+function loadMainPage(page) {
+	var xhr = new XMLHttpRequest();
+
+	xhr.onload = function () {
+        mainPage.innerHTML = this.response;
+    };
+
+    var locationSub = window.location.href;
+    locationSub = locationSub.substring(0, locationSub.lastIndexOf('/'));
+
+    xhr.open('GET', locationSub + '/pages/' + page, true);
+    xhr.send();
 }
 
 function fadeContent(showShadow) {

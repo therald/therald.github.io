@@ -38,42 +38,18 @@ function begin() {
 		if (!checkActive(this)) {
 			loadMainPage("about_me.html");
 		}
-
-		fadeContent(true);
-
-		var drawer = document.getElementById("drawer");
-		drawer.style.left = "0";
-
-		var closeButton = document.getElementById("close_hamburger_menu");
-		buttonClicked(e, closeButton);
 	};
 
 	document.getElementById('portfolio_link').onclick = function(e) {
 		if (!checkActive(this)) {
 			loadMainPage("portfolio.html");
 		}
-
-		fadeContent(true);
-
-		var drawer = document.getElementById("drawer");
-		drawer.style.left = "0";
-
-		var closeButton = document.getElementById("close_hamburger_menu");
-		buttonClicked(e, closeButton);
 	};
 
 	document.getElementById('resume_link').onclick = function(e) {
 		if (!checkActive(this)) {
 			loadMainPage("resume.html");
 		}
-
-		fadeContent(true);
-
-		var drawer = document.getElementById("drawer");
-		drawer.style.left = "0";
-
-		var closeButton = document.getElementById("close_hamburger_menu");
-		buttonClicked(e, closeButton);
 	};
 
 	var accordionButtons = document.getElementsByClassName("accordion_button");
@@ -118,6 +94,14 @@ function loadMainPage(page) {
 
     xhr.open('GET', locationSub + '/pages/' + page, true);
     xhr.send();
+
+    fadeContent(false);
+
+	var drawer = document.getElementById("drawer");
+		drawer.style.left = "-100%";
+
+	var closeButton = document.getElementById("close_hamburger_menu");
+	buttonClicked(e, closeButton);
 }
 
 function fadeContent(showShadow) {

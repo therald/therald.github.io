@@ -36,19 +36,19 @@ function begin() {
 	//drawer links
 	document.getElementById('about_link').onclick = function(e) {
 		if (!checkActive(this)) {
-			loadMainPage("about_me.html");
+			loadMainPage(e, "about_me.html");
 		}
 	};
 
 	document.getElementById('portfolio_link').onclick = function(e) {
 		if (!checkActive(this)) {
-			loadMainPage("portfolio.html");
+			loadMainPage(e, "portfolio.html");
 		}
 	};
 
 	document.getElementById('resume_link').onclick = function(e) {
 		if (!checkActive(this)) {
-			loadMainPage("resume.html");
+			loadMainPage(e, "resume.html");
 		}
 	};
 
@@ -81,7 +81,7 @@ function checkActive(element) {
 	return hasClass;
 }
 
-function loadMainPage(page) {
+function loadMainPage(e, page) {
 	var mainPage = document.getElementById("main_page");
 	var xhr = new XMLHttpRequest();
 
@@ -98,7 +98,7 @@ function loadMainPage(page) {
     fadeContent(false);
 
 	var drawer = document.getElementById("drawer");
-		drawer.style.left = "-100%";
+	drawer.style.left = "-100%";
 
 	var closeButton = document.getElementById("close_hamburger_menu");
 	buttonClicked(e, closeButton);

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 function begin() {
-	//loadMainPage("about_me.html");
+	loadMainPage("about_me.html");
 
 	document.getElementById('hamburger_menu').onclick = function(e) {
 		fadeContent(true);

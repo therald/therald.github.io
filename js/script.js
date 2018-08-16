@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 function begin() {
-	var mainPage = document.getElementById("main_page");
 	loadMainPage("about_me.html");
 
 	document.getElementById('hamburger_menu').onclick = function(e) {
@@ -107,6 +106,7 @@ function checkActive(element) {
 }
 
 function loadMainPage(page) {
+	var mainPage = document.getElementById("main_page");
 	var xhr = new XMLHttpRequest();
 
 	xhr.onload = function () {

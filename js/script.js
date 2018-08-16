@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 function begin() {
 	var mainPage = document.getElementById("main_page");
-	//loadMainPage("about_me.html");
+	loadMainPage("about_me.html");
 
 	document.getElementById('hamburger_menu').onclick = function(e) {
 		fadeContent(true);
@@ -76,6 +76,20 @@ function begin() {
 		var closeButton = document.getElementById("close_hamburger_menu");
 		buttonClicked(e, closeButton);
 	};
+
+	var accordionButtons = document.getElementsByClassName("accordion_button");
+	for (var i = 0; i < accordionButtons.length; i++) {
+	    accordionButtons[i].addEventListener("click", function() {
+	        this.classList.toggle("active");
+
+	        var panel = this.nextElementSibling;
+	        if (panel.style.display === "block") {
+	            panel.style.display = "none";
+	        } else {
+	            panel.style.display = "block";
+	        }
+	    });
+	}
 
 	return false;
 }

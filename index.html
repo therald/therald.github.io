@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 	<script src="js/script.js"></script>
 	<body>
 		<div id="container">
 			<div id="content">
 				<div id="nav_bar">
-					<span id="hamburger_menu">
-						<svg style="width:36px;height:36px" viewBox="0 0 24 24">
+					<div>
+						<svg id="hamburger_menu" viewBox="0 0 24 24">
 							<path fill="#000000" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
 						</svg>
-					</span>
+					</div>
 				</div>
 				<div id="main_page">
 					
@@ -21,28 +23,30 @@
 			<div id="shadow_div">
 			</div>
 			<div id="drawer">
-				<div id="top_drawer">
-					<span id="close_hamburger_menu">
-						<svg style="width:36px;height:36px" viewBox="0 0 24 24">
-						    <path fill="#000000" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-						</svg>
-					</span>
+				<div id="drawer_content">
+					<div id="top_drawer">
+						<div>
+							<svg id="close_hamburger_menu" viewBox="0 0 24 24">
+							    <path fill="#000000" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+							</svg>
+						</div>
+					</div>
+					<div id="description">
+						<img id="profile_pic" src="img/profile.jpg">
+						<h1>
+							Taylor Herald
+						</h1>
+						<h2>
+							Web and Mobile App Developer
+						</h2>
+					</div>
+					<div id="links">
+						<h2 id="about_link" class="link">About Me</h2>
+						<h2 id="portfolio_link" class="link">Portfolio</h2>
+						<h2 id="resume_link" class="link">Resume</h2>
+					</div>
 				</div>
-				<div id="description">
-					<img id="profile_pic" src="img/profile.jpg">
-					<h1>
-						Taylor Herald
-					</h1>
-					<h4>
-						Web and Mobile App Developer
-					</h4>
-				</div>
-				<div id="links">
-					<h4 id="about_link" class="link">About Me</h4>
-					<h4 id="portfolio_link" class="link">Portfolio</h4>
-					<h4 id="resume_link" class="link">Resume</h4>
-				</div>
-				<div id="social_set">
+				<div id="drawer_footer">
 					<div id="social_icons">
 						<div id="email" class="social_div">
 							<a href="mailto:t.herald7@hotmail.com">

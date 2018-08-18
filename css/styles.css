@@ -1,0 +1,297 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+/* line 9, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 30, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 39, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 43, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 47, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 53, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+/* line 62, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+/* line 69, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 76, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 80, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 85, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+/* line 91, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 100, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+/* line 2, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* apply a natural box layout model to all elements */
+/* line 8, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+* {
+  -box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* line 14, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body {
+  font-family: monospace, sans-serif;
+  font-size: 16px;
+}
+
+/* line 18, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container {
+  padding: 0px;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+/* line 27, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #content {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  z-index: 0;
+}
+
+/* line 35, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #content #nav_bar {
+  background-color: rgba(0, 52, 0, 0.6);
+  height: 4.5rem;
+  padding-left: 1rem;
+}
+
+/* line 40, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #content #nav_bar div {
+  padding-top: 0.5rem;
+}
+
+/* line 43, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #content #nav_bar div #hamburger_menu {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/* line 51, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #drawer {
+  background-color: #FFFFFF;
+  height: 100vh;
+  left: -100%;
+  position: absolute;
+  width: 20rem;
+  z-index: 2;
+  transition-timing-function: ease-out;
+  -webkit-transition: all .5s, -webkit-transform .5s;
+  transition: all .5s, transform .5s;
+}
+
+/* line 64, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #drawer #drawer_content #description {
+  margin-top: -1.5rem;
+}
+
+/* line 67, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #drawer #drawer_content #description h1 {
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* line 73, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #drawer #drawer_content #description h2 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+/* line 78, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #drawer #drawer_content #description #profile_pic {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  width: 55%;
+}
+
+/* line 86, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #drawer #drawer_content #links {
+  margin: 2rem 1.5rem;
+}
+
+/* line 89, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #drawer #drawer_content #links h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+/* line 94, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #drawer #drawer_content #links h2:hover {
+  color: rgba(0, 52, 0, 0.6);
+  font-size: 3rem;
+}
+
+/* line 100, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #drawer #drawer_content #top_drawer {
+  height: 3.5rem;
+  padding-left: 0.75rem;
+  padding-top: 0.75rem;
+}
+
+/* line 107, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #drawer #drawer_content #top_drawer div #close_hamburger_menu {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/* line 115, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #drawer #drawer_footer {
+  background-color: rgba(0, 52, 0, 0.6);
+  bottom: 0rem;
+  height: 5rem;
+  padding: 0.75rem 0rem;
+  position: fixed;
+  width: inherit;
+}
+
+/* line 123, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #drawer #drawer_footer #social_icons {
+  margin: auto;
+  align-items: flex-end;
+  text-align: center;
+}
+
+/* line 128, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #drawer #drawer_footer #social_icons .social_div {
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 133, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #drawer #drawer_footer #social_icons .social_div .social_icon {
+  width: 3rem;
+}
+
+/* line 141, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+body div#container #shadow_div {
+  background-color: #444444;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  transition-timing-function: ease-out;
+  -webkit-transition: all .5s, -webkit-transform .5s;
+  transition: all .5s, transform .5s;
+}
+
+/* line 158, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*# sourceMappingURL=../css/styles.map */

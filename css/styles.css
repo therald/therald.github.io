@@ -115,27 +115,27 @@ input, select {
 }
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
-/* line 2, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 2, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
 /* apply a natural box layout model to all elements */
-/* line 8, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 8, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 * {
   -box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
-/* line 14, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 14, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body {
   font-family: monospace, sans-serif;
   font-size: 16px;
 }
 
-/* line 18, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 18, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container {
   padding: 0px;
   height: 100vh;
@@ -146,7 +146,7 @@ body div#container {
   width: 100%;
 }
 
-/* line 27, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 27, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #content {
   height: 100%;
   width: 100%;
@@ -156,94 +156,95 @@ body div#container #content {
   z-index: 0;
 }
 
-/* line 35, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 35, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #content #nav_bar {
   background-color: rgba(0, 52, 0, 0.6);
   height: 4.5rem;
   padding-left: 1rem;
 }
 
-/* line 40, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 40, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #content #nav_bar div {
   padding-top: 0.5rem;
 }
 
-/* line 43, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 43, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #content #nav_bar div #hamburger_menu {
   width: 3.5rem;
   height: 3.5rem;
 }
 
-/* line 51, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 51, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #drawer {
   background-color: #FFFFFF;
   height: 100vh;
   left: -100%;
   position: absolute;
-  width: 20rem;
+  width: 100%;
   z-index: 2;
   transition-timing-function: ease-out;
   -webkit-transition: all .5s, -webkit-transform .5s;
   transition: all .5s, transform .5s;
 }
 
-/* line 64, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 64, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #drawer #drawer_content #description {
   margin-top: -1.5rem;
 }
 
-/* line 67, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 67, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #drawer #drawer_content #description h1 {
   font-size: 2.25rem;
   margin-top: 0.5rem;
   text-align: center;
 }
 
-/* line 73, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 73, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #drawer #drawer_content #description h2 {
   font-size: 1.05rem;
+  margin-top: 0.25rem;
   text-align: center;
 }
 
-/* line 78, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 79, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #drawer #drawer_content #description #profile_pic {
   border-radius: 50%;
   display: block;
   margin: auto;
-  width: 55%;
+  width: 80%;
 }
 
-/* line 86, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 87, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #drawer #drawer_content #links {
   margin: 2rem 1.5rem;
 }
 
-/* line 89, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 90, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #drawer #drawer_content #links h2 {
   font-size: 2rem;
   margin-top: 1rem;
 }
 
-/* line 94, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 95, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #drawer #drawer_content #links h2:hover {
   color: rgba(0, 52, 0, 0.6);
   font-size: 3rem;
 }
 
-/* line 100, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 101, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #drawer #drawer_content #top_drawer {
   height: 3.5rem;
   padding-left: 0.75rem;
   padding-top: 0.75rem;
 }
 
-/* line 107, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 108, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #drawer #drawer_content #top_drawer div #close_hamburger_menu {
   width: 3.5rem;
   height: 3.5rem;
 }
 
-/* line 115, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 116, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #drawer #drawer_footer {
   background-color: rgba(0, 52, 0, 0.6);
   bottom: 0rem;
@@ -253,26 +254,26 @@ body div#container #drawer #drawer_footer {
   width: inherit;
 }
 
-/* line 123, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 124, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #drawer #drawer_footer #social_icons {
   margin: auto;
   align-items: flex-end;
   text-align: center;
 }
 
-/* line 128, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 129, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #drawer #drawer_footer #social_icons .social_div {
   width: 25%;
   display: inline-block;
   text-align: center;
 }
 
-/* line 133, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 134, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #drawer #drawer_footer #social_icons .social_div .social_icon {
   width: 3rem;
 }
 
-/* line 141, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 142, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 body div#container #shadow_div {
   background-color: #444444;
   height: 100vh;
@@ -287,11 +288,18 @@ body div#container #shadow_div {
   transition: all .5s, transform .5s;
 }
 
-/* line 158, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+/* line 159, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+
+@media only screen and (min-width: 320px) {
+  /* line 3, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
+  body div#container #drawer {
+    width: 20rem;
+  }
 }
 
 /*# sourceMappingURL=../css/styles.map */

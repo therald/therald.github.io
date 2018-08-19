@@ -108,6 +108,148 @@ body{
 				        }
 	        		}
 	        	}
+
+	        	#resume_sections {
+	        		height: 100%;
+	        		overflow: scroll;
+	        		padding: 2rem;
+	        		width: 100%;
+
+	        		#languages {
+	        			width: 100%;
+
+	        			h1 {
+	        				font-size: 2rem;
+	        			}
+
+	        			hr {
+	        				margin-right: 2rem;
+	        				margin-top: 0.5rem;
+	        			}
+
+	        			#languages_grid {
+	        				.badge {
+	        					margin: auto;
+	        					margin-bottom: 1rem;
+	        					width: 80%;
+
+	        					.language_icon {
+	        						width: 100%;
+	        					}
+	        				}
+	        			}
+	        		}
+
+	        		#education {
+	        			width: 100%;
+
+	        			h1 {
+	        				font-size: 2rem;
+	        			}
+
+	        			hr {
+	        				margin-right: 2rem;
+	        				margin-top: 0.5rem;
+	        			}
+
+	        			.education {
+	        				width: 100%;
+
+	        				.education_detail {
+	        					h1 {
+	        						font-size: 1.25rem;
+	        					}
+
+	        					h2 {
+	        						font-weight: normal;
+	        					}
+
+	        					.activities {
+	        						margin-top: 1rem;
+	        					}
+
+	        					ul {
+	        						margin-left: 1.5rem;
+	        					}
+	        				}
+
+	        				.education_logo_container {
+	        					margin: auto;
+	        					margin-bottom: 1rem;
+	        					margin-top: 1rem;
+	        					width: 80%;
+
+	        					img {
+		        					width: 100%;
+		        				}
+	        				}
+	        			}
+	        		}
+
+	        		#experience {
+	        			margin-top: 2rem;
+	        			width: 100%;
+
+	        			h1 {
+	        				font-size: 2rem;
+	        			}
+
+	        			hr {
+	        				margin-right: 2rem;
+	        				margin-top: 0.5rem;
+	        			}
+
+	        			.experience {
+	        				margin-bottom: 4.5rem;
+	        				width: 100%;
+
+	        				.experience_logo_container {
+	        					margin: auto;
+	        					margin-bottom: 1rem;
+	        					margin-top: 1rem;
+	        					width: 80%;
+
+	        					img {
+		        					width: 100%;
+		        				}
+	        				}
+
+	        				.experience_detail {
+	        					.accordion_button {
+							        background-color: #eee;
+							        color: #444;
+							        cursor: pointer;
+							        padding: 18px;
+							        width: 100%;
+							        text-align: left;
+							        border: none;
+							        outline: none;
+							        transition: 0.4s;
+							    }
+
+							    .active, .accordion_button:hover {
+							        background-color: #ccc;
+							    }
+
+							    .experience_accordion {
+							        padding: 0 18px;
+							        background-color: white;
+							        display: none;
+							        overflow: hidden;
+
+							        ul {
+						        		margin-bottom: 2rem;
+						        		margin-top: 1rem;
+						        	}
+
+						        	.last_list {
+						        		margin-bottom: 0rem;
+						        	}
+							    }
+	        				}
+	        			}
+	        		}
+	        	}
 	        }
 
     		#nav_bar {

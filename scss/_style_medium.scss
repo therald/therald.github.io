@@ -21,6 +21,57 @@ body{
 						}
 	        		}
 	        	}
+
+	        	#resume_sections {
+	        		#languages {
+	        			#languages_grid {
+	        				width: 100%;
+
+
+	        				.badge {
+	        					width: 20%;
+
+	        					&:nth-child(4n+1) {
+									float: left;
+									margin-left: 3%;
+								}
+
+
+	        					.text {
+								    left: 15%;
+	        					}
+	        				}
+	        			}
+	        		}
+
+	        		#education {
+	        			.education {
+		        			width: 44%;
+
+		        			&:nth-child(2n) {
+		        				float: right;
+		        			}
+
+		        			&:nth-child(2n+1) {
+		        				float: left;
+		        			}
+		        		}
+	        		}
+
+	        		#experience {
+	        			.experience {
+	        				width: 44%;
+
+	        				&:nth-child(2n) {
+		        				float: right;
+		        			}
+
+		        			&:nth-child(2n+1) {
+		        				float: left;
+		        			}
+	        			}
+	        		}
+	        	}
 	        }
 	    }
 	}

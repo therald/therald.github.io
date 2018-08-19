@@ -29,6 +29,84 @@ body{
                         }
                     }
                 }
+
+                #resume_sections {
+                    #languages {
+                        display: inline-block;
+                        float: left;
+                        height: 100%;
+                        width: 33%;
+
+                        #languages_grid {
+                            .badge {
+                                width: 40%;
+
+                                &:nth-child(2n+1) {
+                                    float: left;
+                                    margin-left: 3%;
+                                }
+
+                                &:nth-child(2n) {
+                                    float: right;
+                                    margin-right: 3%;
+                                }
+
+                                .text {
+                                    left: 15%;
+                                }
+                            }
+                        }
+                    }
+
+                    #education {
+                        display: inline-block;
+                        float: unset;
+                        height: 100%;
+                        width: 34%;
+
+                        .education {
+                            margin: auto;
+                            width: 80%;
+
+                            &:last-child {
+                                .education_detail {
+                                    ul {
+                                        margin-bottom: 6.5rem;
+                                    }
+                                }
+                            }
+
+                            &:nth-child(2n) {
+                                float: none;
+                            }
+
+                            &:nth-child(2n+1) {
+                                float: none;
+                            }
+                        }
+                    }
+
+                    #experience {
+                        display: inline-block;
+                        float: right;
+                        height: 100%;
+                        margin-top: 0rem;
+                        width: 33%;
+
+                        .experience {
+                            margin: auto;
+                            width: 80%;
+
+                            &:nth-child(2n) {
+                                float: none;
+                            }
+
+                            &:nth-child(2n+1) {
+                                float: none;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

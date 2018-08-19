@@ -44,7 +44,7 @@ html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 body { font-family: monospace, sans-serif; font-size: 16px; }
 
-body div#container { padding: 0px; height: 100vh; margin: 0px; overflow: hidden; padding: 0px; position: relative; width: 100%; }
+body div#container { padding: 0px; height: 100vh; margin: 0px; overflow: hidden; -webkit-overflow-scrolling: touch; padding: 0px; position: relative; width: 100%; }
 
 body div#container #content { height: 100%; width: 100%; padding: 0px; margin: 0px; position: absolute; z-index: 0; }
 
@@ -58,7 +58,7 @@ body div#container #content #main_page #about_description h1 { font-size: 2.5rem
 
 body div#container #content #main_page #about_description p { margin-top: 1rem; }
 
-body div#container #content #main_page #projects { background-color: #DDDDDD; height: 100%; overflow: scroll; padding-top: 0.05rem; width: 100%; }
+body div#container #content #main_page #projects { background-color: #DDDDDD; height: 100%; overflow: scroll; -webkit-overflow-scrolling: touch; padding-top: 0.05rem; width: 100%; }
 
 body div#container #content #main_page #projects .project { background-color: #FFFFFF; border-radius: 5%; margin: auto; margin-top: 2rem; padding: 2rem 4% 2rem 4%; width: 92%; }
 
@@ -76,7 +76,7 @@ body div#container #content #main_page #projects .project .portfolio_link_contai
 
 body div#container #content #main_page #projects .project .portfolio_link_container a h1 { background-color: #DDDDDD; border-radius: 5%; color: black; margin-top: 1rem; }
 
-body div#container #content #main_page #resume_sections { height: 100%; overflow: scroll; padding: 2rem; width: 100%; }
+body div#container #content #main_page #resume_sections { height: 100%; overflow: scroll; -webkit-overflow-scrolling: touch; padding: 2rem; width: 100%; }
 
 body div#container #content #main_page #resume_sections #languages { width: 100%; }
 
@@ -124,7 +124,7 @@ body div#container #content #main_page #resume_sections #experience .experience 
 
 body div#container #content #main_page #resume_sections #experience .experience .experience_detail .active, body div#container #content #main_page #resume_sections #experience .experience .experience_detail .accordion_button:hover { background-color: #ccc; }
 
-body div#container #content #main_page #resume_sections #experience .experience .experience_detail .experience_accordion { padding: 0 18px; background-color: white; display: none; overflow: hidden; }
+body div#container #content #main_page #resume_sections #experience .experience .experience_detail .experience_accordion { padding: 0 18px; background-color: white; display: none; overflow: hidden; -webkit-overflow-scrolling: touch; }
 
 body div#container #content #main_page #resume_sections #experience .experience .experience_detail .experience_accordion ul { margin-bottom: 2rem; margin-top: 1rem; }
 

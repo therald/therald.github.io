@@ -1,0 +1,35 @@
+body{
+    div#container {
+        #content {
+            #main_page {
+                #about_img_div {
+                    height: 100vh;
+                    width: 50%;
+                    float: left;
+                }
+
+                #about_description {
+                    padding: 1.5rem;
+                    width: 50%;
+                    float: right;
+                }
+
+                #projects {
+                    .project {
+                        width: 28%;
+
+                        &:nth-child(3n+1) {
+                            float: left;
+                            margin-left: 4%;
+                        }
+
+                        &:nth-child(3n) {
+                            float: right;
+                            margin-right: 4%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

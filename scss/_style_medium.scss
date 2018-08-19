@@ -1,0 +1,27 @@
+body{
+    div#container {
+    	#content {
+	        #main_page {
+	        	#about_img_div {
+	        		height: 60vh;
+	        	}
+
+	        	#projects {
+	        		.project {
+	        			width: 44%;
+
+	        			&:nth-child(2n+1) {
+							float: left;
+							margin-left: 4%;
+						}
+
+						&:nth-child(2n) {
+							float: right;
+							margin-right: 4%;
+						}
+	        		}
+	        	}
+	        }
+	    }
+	}
+}

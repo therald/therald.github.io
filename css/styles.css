@@ -5,733 +5,206 @@ Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com 
 Twitter: @rich_clark
 */
-/* line 9, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
 
-/* line 30, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
-body {
-  line-height: 1;
-}
+body { line-height: 1; }
 
-/* line 34, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-/* line 39, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
-nav ul {
-  list-style: none;
-}
+nav ul { list-style: none; }
 
-/* line 43, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
-blockquote, q {
-  quotes: none;
-}
+blockquote, q { quotes: none; }
 
-/* line 47, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 
-/* line 53, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
-a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
 
 /* change colours to suit your needs */
-/* line 62, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
-ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none;
-}
+ins { background-color: #ff9; color: #000; text-decoration: none; }
 
 /* change colours to suit your needs */
-/* line 69, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
 
-/* line 76, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
-del {
-  text-decoration: line-through;
-}
+del { text-decoration: line-through; }
 
-/* line 80, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
-abbr[title], dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
-}
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
 
-/* line 85, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+table { border-collapse: collapse; border-spacing: 0; }
 
 /* change border colour to suit your needs */
-/* line 91, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0;
-}
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #cccccc; margin: 1em 0; padding: 0; }
 
-/* line 100, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_reset.scss */
-input, select {
-  vertical-align: middle;
-}
+input, select { vertical-align: middle; }
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
-/* line 2, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
+html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 /* apply a natural box layout model to all elements */
-/* line 8, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-* {
-  -box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-/* line 14, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body {
-  font-family: monospace, sans-serif;
-  font-size: 16px;
-}
-
-/* line 18, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container {
-  padding: 0px;
-  height: 100vh;
-  margin: 0px;
-  overflow: hidden;
-  padding: 0px;
-  position: relative;
-  width: 100%;
-}
-
-/* line 27, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content {
-  height: 100%;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  z-index: 0;
-}
-
-/* line 35, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page {
-  height: 100%;
-  width: 100%;
-}
-
-/* line 39, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #about_img_div {
-  background-color: #003400;
-  height: 40vh;
-}
-
-/* line 44, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #about_description {
-  padding: 1.5rem;
-}
-
-/* line 47, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #about_description h1 {
-  font-size: 2.5rem;
-}
-
-/* line 51, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #about_description p {
-  margin-top: 1rem;
-}
-
-/* line 56, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #projects {
-  background-color: #DDDDDD;
-  height: 100%;
-  overflow: scroll;
-  padding-top: 0.05rem;
-  width: 100%;
-}
-
-/* line 63, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #projects .project {
-  background-color: #FFFFFF;
-  border-radius: 5%;
-  margin: auto;
-  margin-top: 2rem;
-  padding: 2rem 4% 2rem 4%;
-  width: 92%;
-}
-
-/* line 71, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #projects .project h1 {
-  font-size: 1.15rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  text-align: center;
-}
-
-/* line 78, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #projects .project:last-child {
-  margin-bottom: 6.5rem;
-}
-
-/* line 82, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #projects .project .portfolio_image_container {
-  margin: auto;
-  width: 80%;
-}
-
-/* line 87, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #projects .project .portfolio_image_container a .portfolio_image {
-  width: 100%;
-}
-
-/* line 93, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #projects .project .portfolio_link_container {
-  width: 80%;
-  margin: auto;
-  padding-bottom: 1rem;
-}
-
-/* line 98, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #projects .project .portfolio_link_container a {
-  text-decoration: none;
-}
-
-/* line 101, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #projects .project .portfolio_link_container a h1 {
-  background-color: #DDDDDD;
-  border-radius: 5%;
-  color: black;
-  margin-top: 1rem;
-}
-
-/* line 112, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections {
-  height: 100%;
-  overflow: scroll;
-  padding: 2rem;
-  width: 100%;
-}
-
-/* line 118, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #languages {
-  width: 100%;
-}
-
-/* line 121, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #languages h1 {
-  font-size: 2rem;
-}
-
-/* line 125, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #languages hr {
-  margin-right: 2rem;
-  margin-top: 0.5rem;
-}
-
-/* line 131, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #languages #languages_grid .badge {
-  margin: auto;
-  margin-bottom: 1rem;
-  width: 80%;
-}
-
-/* line 136, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #languages #languages_grid .badge .language_icon {
-  width: 100%;
-}
-
-/* line 143, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #education {
-  width: 100%;
-}
-
-/* line 146, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #education h1 {
-  font-size: 2rem;
-}
-
-/* line 150, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #education hr {
-  margin-right: 2rem;
-  margin-top: 0.5rem;
-}
-
-/* line 155, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #education .education {
-  width: 100%;
-}
-
-/* line 159, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #education .education .education_detail h1 {
-  font-size: 1.25rem;
-}
-
-/* line 163, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #education .education .education_detail h2 {
-  font-weight: normal;
-}
-
-/* line 167, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #education .education .education_detail .activities {
-  margin-top: 1rem;
-}
-
-/* line 171, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #education .education .education_detail ul {
-  margin-left: 1.5rem;
-}
-
-/* line 176, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #education .education .education_logo_container {
-  margin: auto;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  width: 80%;
-}
-
-/* line 182, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #education .education .education_logo_container img {
-  width: 100%;
-}
-
-/* line 189, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #experience {
-  margin-top: 2rem;
-  width: 100%;
-}
-
-/* line 193, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #experience h1 {
-  font-size: 2rem;
-}
-
-/* line 197, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #experience hr {
-  margin-right: 2rem;
-  margin-top: 0.5rem;
-}
-
-/* line 202, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #experience .experience {
-  margin-bottom: 4.5rem;
-  width: 100%;
-}
-
-/* line 206, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #experience .experience .experience_logo_container {
-  margin: auto;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  width: 80%;
-}
-
-/* line 212, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #experience .experience .experience_logo_container img {
-  width: 100%;
-}
-
-/* line 218, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #experience .experience .experience_detail .accordion_button {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-/* line 230, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #experience .experience .experience_detail .active, body div#container #content #main_page #resume_sections #experience .experience .experience_detail .accordion_button:hover {
-  background-color: #ccc;
-}
-
-/* line 234, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #experience .experience .experience_detail .experience_accordion {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-}
-
-/* line 240, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #experience .experience .experience_detail .experience_accordion ul {
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-}
-
-/* line 245, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #main_page #resume_sections #experience .experience .experience_detail .experience_accordion .last_list {
-  margin-bottom: 0rem;
-}
-
-/* line 255, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #nav_bar {
-  background-color: rgba(0, 52, 0, 0.6);
-  height: 4.5rem;
-  padding-left: 1rem;
-}
-
-/* line 260, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #nav_bar div {
-  padding-top: 0.5rem;
-}
-
-/* line 263, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #content #nav_bar div #hamburger_menu {
-  width: 3.5rem;
-  height: 3.5rem;
-}
-
-/* line 271, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #drawer {
-  background-color: #FFFFFF;
-  height: 100vh;
-  left: -100%;
-  position: absolute;
-  width: 100%;
-  z-index: 2;
-  transition-timing-function: ease-out;
-  -webkit-transition: all .5s, -webkit-transform .5s;
-  transition: all .5s, transform .5s;
-}
-
-/* line 284, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #drawer #drawer_content #description {
-  margin-top: -1.5rem;
-}
-
-/* line 287, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #drawer #drawer_content #description h1 {
-  font-size: 2.25rem;
-  margin-top: 0.5rem;
-  text-align: center;
-}
-
-/* line 293, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #drawer #drawer_content #description h2 {
-  font-size: 1.05rem;
-  margin-top: 0.25rem;
-  text-align: center;
-}
-
-/* line 299, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #drawer #drawer_content #description #profile_pic {
-  border-radius: 50%;
-  display: block;
-  margin: auto;
-  width: 65%;
-}
-
-/* line 307, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #drawer #drawer_content #links {
-  margin: 2rem 1.5rem;
-}
-
-/* line 310, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #drawer #drawer_content #links h2 {
-  font-size: 2rem;
-  margin-top: 1rem;
-}
-
-/* line 315, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #drawer #drawer_content #links h2:hover {
-  color: rgba(0, 52, 0, 0.6);
-  font-size: 3rem;
-}
-
-/* line 321, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #drawer #drawer_content #top_drawer {
-  height: 3.5rem;
-  padding-left: 0.75rem;
-  padding-top: 0.75rem;
-}
-
-/* line 328, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #drawer #drawer_content #top_drawer div #close_hamburger_menu {
-  width: 3.5rem;
-  height: 3.5rem;
-}
-
-/* line 336, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #drawer #drawer_footer {
-  background-color: rgba(0, 52, 0, 0.6);
-  bottom: 0rem;
-  height: 5rem;
-  padding: 0.75rem 0rem;
-  position: fixed;
-  width: inherit;
-}
-
-/* line 344, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #drawer #drawer_footer #social_icons {
-  margin: auto;
-  align-items: flex-end;
-  text-align: center;
-}
-
-/* line 349, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #drawer #drawer_footer #social_icons .social_div {
-  width: 25%;
-  display: inline-block;
-  text-align: center;
-}
-
-/* line 354, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #drawer #drawer_footer #social_icons .social_div .social_icon {
-  width: 3rem;
-}
-
-/* line 362, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-body div#container #shadow_div {
-  background-color: #444444;
-  height: 100vh;
-  padding: 0px;
-  margin: 0px;
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-  transition-timing-function: ease-out;
-  -webkit-transition: all .5s, -webkit-transform .5s;
-  transition: all .5s, transform .5s;
-}
-
-/* line 379, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_extra_small.scss */
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media only screen and (min-width: 320px) {
-  /* line 8, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
-  body div#container #content #main_page #resume_sections #languages #languages_grid .badge {
-    width: 40%;
-  }
-  /* line 11, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
-  body div#container #content #main_page #resume_sections #languages #languages_grid .badge:nth-child(2n+1) {
-    float: left;
-    margin-left: 3%;
-  }
-  /* line 16, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
-  body div#container #content #main_page #resume_sections #languages #languages_grid .badge:nth-child(2n) {
-    float: right;
-    margin-right: 3%;
-  }
-  /* line 21, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
-  body div#container #content #main_page #resume_sections #languages #languages_grid .badge .text {
-    left: 15%;
-  }
-  /* line 31, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_small.scss */
-  body div#container #drawer {
-    width: 20rem;
-  }
-}
-
-@media only screen and (min-width: 560px) {
-  /* line 5, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_medium.scss */
-  body div#container #content #main_page #about_img_div {
-    height: 60vh;
-  }
-  /* line 10, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_medium.scss */
-  body div#container #content #main_page #projects .project {
-    width: 44%;
-  }
-  /* line 13, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_medium.scss */
-  body div#container #content #main_page #projects .project:nth-child(2n+1) {
-    float: left;
-    margin-left: 4%;
-  }
-  /* line 18, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_medium.scss */
-  body div#container #content #main_page #projects .project:nth-child(2n) {
-    float: right;
-    margin-right: 4%;
-  }
-  /* line 27, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_medium.scss */
-  body div#container #content #main_page #resume_sections #languages #languages_grid {
-    width: 100%;
-  }
-  /* line 31, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_medium.scss */
-  body div#container #content #main_page #resume_sections #languages #languages_grid .badge {
-    width: 20%;
-  }
-  /* line 34, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_medium.scss */
-  body div#container #content #main_page #resume_sections #languages #languages_grid .badge:nth-child(4n+1) {
-    float: left;
-    margin-left: 3%;
-  }
-  /* line 40, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_medium.scss */
-  body div#container #content #main_page #resume_sections #languages #languages_grid .badge .text {
-    left: 15%;
-  }
-  /* line 48, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_medium.scss */
-  body div#container #content #main_page #resume_sections #education .education {
-    width: 44%;
-  }
-  /* line 51, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_medium.scss */
-  body div#container #content #main_page #resume_sections #education .education:nth-child(2n) {
-    float: right;
-  }
-  /* line 55, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_medium.scss */
-  body div#container #content #main_page #resume_sections #education .education:nth-child(2n+1) {
-    float: left;
-  }
-  /* line 62, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_medium.scss */
-  body div#container #content #main_page #resume_sections #experience .experience {
-    width: 44%;
-  }
-  /* line 65, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_medium.scss */
-  body div#container #content #main_page #resume_sections #experience .experience:nth-child(2n) {
-    float: right;
-  }
-  /* line 69, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_medium.scss */
-  body div#container #content #main_page #resume_sections #experience .experience:nth-child(2n+1) {
-    float: left;
-  }
-}
-
-@media screen and (min-width: 1140px) {
-  /* line 5, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #about_img_div {
-    height: 100vh;
-    width: 50%;
-    float: left;
-  }
-  /* line 11, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #about_description {
-    padding: 1.5rem;
-    width: 50%;
-    float: right;
-  }
-  /* line 18, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #projects .project {
-    width: 28%;
-  }
-  /* line 21, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #projects .project:nth-child(3n+1) {
-    float: left;
-    margin-left: 4%;
-  }
-  /* line 26, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #projects .project:nth-child(3n) {
-    float: right;
-    margin-right: 4%;
-  }
-  /* line 34, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #resume_sections #languages {
-    display: inline-block;
-    float: left;
-    height: 100%;
-    width: 33%;
-  }
-  /* line 41, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #resume_sections #languages #languages_grid .badge {
-    width: 40%;
-  }
-  /* line 44, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #resume_sections #languages #languages_grid .badge:nth-child(2n+1) {
-    float: left;
-    margin-left: 3%;
-  }
-  /* line 49, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #resume_sections #languages #languages_grid .badge:nth-child(2n) {
-    float: right;
-    margin-right: 3%;
-  }
-  /* line 54, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #resume_sections #languages #languages_grid .badge .text {
-    left: 15%;
-  }
-  /* line 61, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #resume_sections #education {
-    display: inline-block;
-    float: unset;
-    height: 100%;
-    width: 34%;
-  }
-  /* line 67, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #resume_sections #education .education {
-    margin: auto;
-    width: 80%;
-  }
-  /* line 73, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #resume_sections #education .education:last-child .education_detail ul {
-    margin-bottom: 6.5rem;
-  }
-  /* line 79, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #resume_sections #education .education:nth-child(2n) {
-    float: none;
-  }
-  /* line 83, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #resume_sections #education .education:nth-child(2n+1) {
-    float: none;
-  }
-  /* line 89, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #resume_sections #experience {
-    display: inline-block;
-    float: right;
-    height: 100%;
-    margin-top: 0rem;
-    width: 33%;
-  }
-  /* line 96, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #resume_sections #experience .experience {
-    margin: auto;
-    width: 80%;
-  }
-  /* line 100, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #resume_sections #experience .experience:nth-child(2n) {
-    float: none;
-  }
-  /* line 104, C:/Users/taylor.herald/Documents/GitHub/therald.github.io/scss/_style_large.scss */
-  body div#container #content #main_page #resume_sections #experience .experience:nth-child(2n+1) {
-    float: none;
-  }
-}
-
-/*# sourceMappingURL=../css/styles.map */
+* { -box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+
+body { font-family: monospace, sans-serif; font-size: 16px; }
+
+body div#container { padding: 0px; height: 100vh; margin: 0px; overflow: hidden; padding: 0px; position: relative; width: 100%; }
+
+body div#container #content { height: 100%; width: 100%; padding: 0px; margin: 0px; position: absolute; z-index: 0; }
+
+body div#container #content #main_page { height: 100%; width: 100%; }
+
+body div#container #content #main_page #about_img_div { background-color: #003400; height: 40vh; }
+
+body div#container #content #main_page #about_description { padding: 1.5rem; }
+
+body div#container #content #main_page #about_description h1 { font-size: 2.5rem; }
+
+body div#container #content #main_page #about_description p { margin-top: 1rem; }
+
+body div#container #content #main_page #projects { background-color: #DDDDDD; height: 100%; overflow: scroll; padding-top: 0.05rem; width: 100%; }
+
+body div#container #content #main_page #projects .project { background-color: #FFFFFF; border-radius: 5%; margin: auto; margin-top: 2rem; padding: 2rem 4% 2rem 4%; width: 92%; }
+
+body div#container #content #main_page #projects .project h1 { font-size: 1.15rem; padding-bottom: 1rem; padding-top: 1rem; text-align: center; }
+
+body div#container #content #main_page #projects .project:last-child { margin-bottom: 6.5rem; }
+
+body div#container #content #main_page #projects .project .portfolio_image_container { margin: auto; width: 80%; }
+
+body div#container #content #main_page #projects .project .portfolio_image_container a .portfolio_image { width: 100%; }
+
+body div#container #content #main_page #projects .project .portfolio_link_container { width: 80%; margin: auto; padding-bottom: 1rem; }
+
+body div#container #content #main_page #projects .project .portfolio_link_container a { text-decoration: none; }
+
+body div#container #content #main_page #projects .project .portfolio_link_container a h1 { background-color: #DDDDDD; border-radius: 5%; color: black; margin-top: 1rem; }
+
+body div#container #content #main_page #resume_sections { height: 100%; overflow: scroll; padding: 2rem; width: 100%; }
+
+body div#container #content #main_page #resume_sections #languages { width: 100%; }
+
+body div#container #content #main_page #resume_sections #languages h1 { font-size: 2rem; }
+
+body div#container #content #main_page #resume_sections #languages hr { margin-right: 2rem; margin-top: 0.5rem; }
+
+body div#container #content #main_page #resume_sections #languages #languages_grid .badge { margin: auto; margin-bottom: 1rem; width: 80%; }
+
+body div#container #content #main_page #resume_sections #languages #languages_grid .badge .language_icon { width: 100%; }
+
+body div#container #content #main_page #resume_sections #education { width: 100%; }
+
+body div#container #content #main_page #resume_sections #education h1 { font-size: 2rem; }
+
+body div#container #content #main_page #resume_sections #education hr { margin-right: 2rem; margin-top: 0.5rem; }
+
+body div#container #content #main_page #resume_sections #education .education { width: 100%; }
+
+body div#container #content #main_page #resume_sections #education .education .education_detail h1 { font-size: 1.25rem; }
+
+body div#container #content #main_page #resume_sections #education .education .education_detail h2 { font-weight: normal; }
+
+body div#container #content #main_page #resume_sections #education .education .education_detail .activities { margin-top: 1rem; }
+
+body div#container #content #main_page #resume_sections #education .education .education_detail ul { margin-left: 1.5rem; }
+
+body div#container #content #main_page #resume_sections #education .education .education_logo_container { margin: auto; margin-bottom: 1rem; margin-top: 1rem; width: 80%; }
+
+body div#container #content #main_page #resume_sections #education .education .education_logo_container img { width: 100%; }
+
+body div#container #content #main_page #resume_sections #experience { margin-top: 2rem; width: 100%; }
+
+body div#container #content #main_page #resume_sections #experience h1 { font-size: 2rem; }
+
+body div#container #content #main_page #resume_sections #experience hr { margin-right: 2rem; margin-top: 0.5rem; }
+
+body div#container #content #main_page #resume_sections #experience .experience { margin-bottom: 4.5rem; width: 100%; }
+
+body div#container #content #main_page #resume_sections #experience .experience .experience_logo_container { margin: auto; margin-bottom: 1rem; margin-top: 1rem; width: 80%; }
+
+body div#container #content #main_page #resume_sections #experience .experience .experience_logo_container img { width: 100%; }
+
+body div#container #content #main_page #resume_sections #experience .experience .experience_detail .accordion_button { background-color: #eee; color: #444; cursor: pointer; padding: 18px; width: 100%; text-align: left; border: none; outline: none; transition: 0.4s; }
+
+body div#container #content #main_page #resume_sections #experience .experience .experience_detail .active, body div#container #content #main_page #resume_sections #experience .experience .experience_detail .accordion_button:hover { background-color: #ccc; }
+
+body div#container #content #main_page #resume_sections #experience .experience .experience_detail .experience_accordion { padding: 0 18px; background-color: white; display: none; overflow: hidden; }
+
+body div#container #content #main_page #resume_sections #experience .experience .experience_detail .experience_accordion ul { margin-bottom: 2rem; margin-top: 1rem; }
+
+body div#container #content #main_page #resume_sections #experience .experience .experience_detail .experience_accordion .last_list { margin-bottom: 0rem; }
+
+body div#container #content #nav_bar { background-color: rgba(0, 52, 0, 0.6); height: 4.5rem; padding-left: 1rem; }
+
+body div#container #content #nav_bar div { padding-top: 0.5rem; }
+
+body div#container #content #nav_bar div #hamburger_menu { width: 3.5rem; height: 3.5rem; }
+
+body div#container #drawer { background-color: #FFFFFF; height: 100vh; left: -100%; position: absolute; width: 100%; z-index: 2; transition-timing-function: ease-out; -webkit-transition: all .5s, -webkit-transform .5s; transition: all .5s, transform .5s; }
+
+body div#container #drawer #drawer_content #description { margin-top: -1.5rem; }
+
+body div#container #drawer #drawer_content #description h1 { font-size: 2.25rem; margin-top: 0.5rem; text-align: center; }
+
+body div#container #drawer #drawer_content #description h2 { font-size: 1.05rem; margin-top: 0.25rem; text-align: center; }
+
+body div#container #drawer #drawer_content #description #profile_pic { border-radius: 50%; display: block; margin: auto; width: 65%; }
+
+body div#container #drawer #drawer_content #links { margin: 2rem 1.5rem; }
+
+body div#container #drawer #drawer_content #links h2 { font-size: 2rem; margin-top: 1rem; }
+
+body div#container #drawer #drawer_content #links h2:hover { color: rgba(0, 52, 0, 0.6); font-size: 3rem; }
+
+body div#container #drawer #drawer_content #top_drawer { height: 3.5rem; padding-left: 0.75rem; padding-top: 0.75rem; }
+
+body div#container #drawer #drawer_content #top_drawer div #close_hamburger_menu { width: 3.5rem; height: 3.5rem; }
+
+body div#container #drawer #drawer_footer { background-color: rgba(0, 52, 0, 0.6); bottom: 0rem; height: 5rem; padding: 0.75rem 0rem; position: fixed; width: inherit; }
+
+body div#container #drawer #drawer_footer #social_icons { margin: auto; align-items: flex-end; text-align: center; }
+
+body div#container #drawer #drawer_footer #social_icons .social_div { width: 25%; display: inline-block; text-align: center; }
+
+body div#container #drawer #drawer_footer #social_icons .social_div .social_icon { width: 3rem; }
+
+body div#container #shadow_div { background-color: #444444; height: 100vh; padding: 0px; margin: 0px; opacity: 0; position: absolute; width: 100%; z-index: -1; transition-timing-function: ease-out; -webkit-transition: all .5s, -webkit-transform .5s; transition: all .5s, transform .5s; }
+
+.clearfix:after { content: ""; display: table; clear: both; }
+
+@media only screen and (min-width: 320px) { body div#container #content #main_page #resume_sections #languages #languages_grid .badge { width: 40%; }
+  body div#container #content #main_page #resume_sections #languages #languages_grid .badge:nth-child(2n+1) { float: left; margin-left: 3%; }
+  body div#container #content #main_page #resume_sections #languages #languages_grid .badge:nth-child(2n) { float: right; margin-right: 3%; }
+  body div#container #content #main_page #resume_sections #languages #languages_grid .badge .text { left: 15%; }
+  body div#container #drawer { width: 20rem; } }
+
+@media only screen and (min-width: 560px) { body div#container #content #main_page #about_img_div { height: 60vh; }
+  body div#container #content #main_page #projects .project { width: 44%; }
+  body div#container #content #main_page #projects .project:nth-child(2n+1) { float: left; margin-left: 4%; }
+  body div#container #content #main_page #projects .project:nth-child(2n) { float: right; margin-right: 4%; }
+  body div#container #content #main_page #resume_sections #languages #languages_grid { width: 100%; }
+  body div#container #content #main_page #resume_sections #languages #languages_grid .badge { width: 20%; }
+  body div#container #content #main_page #resume_sections #languages #languages_grid .badge:nth-child(4n+1) { float: left; margin-left: 3%; }
+  body div#container #content #main_page #resume_sections #languages #languages_grid .badge .text { left: 15%; }
+  body div#container #content #main_page #resume_sections #education .education { width: 44%; }
+  body div#container #content #main_page #resume_sections #education .education:nth-child(2n) { float: right; }
+  body div#container #content #main_page #resume_sections #education .education:nth-child(2n+1) { float: left; }
+  body div#container #content #main_page #resume_sections #experience .experience { width: 44%; }
+  body div#container #content #main_page #resume_sections #experience .experience:nth-child(2n) { float: right; }
+  body div#container #content #main_page #resume_sections #experience .experience:nth-child(2n+1) { float: left; } }
+
+@media screen and (min-width: 1140px) { body div#container #content #main_page #about_img_div { height: 100vh; width: 50%; float: left; }
+  body div#container #content #main_page #about_description { padding: 1.5rem; width: 50%; float: right; }
+  body div#container #content #main_page #projects .project { width: 28%; }
+  body div#container #content #main_page #projects .project:nth-child(3n+1) { float: left; margin-left: 4%; }
+  body div#container #content #main_page #projects .project:nth-child(3n) { float: right; margin-right: 4%; }
+  body div#container #content #main_page #resume_sections #languages { display: inline-block; float: left; height: 100%; width: 33%; }
+  body div#container #content #main_page #resume_sections #languages #languages_grid .badge { width: 40%; }
+  body div#container #content #main_page #resume_sections #languages #languages_grid .badge:nth-child(2n+1) { float: left; margin-left: 3%; }
+  body div#container #content #main_page #resume_sections #languages #languages_grid .badge:nth-child(2n) { float: right; margin-right: 3%; }
+  body div#container #content #main_page #resume_sections #languages #languages_grid .badge .text { left: 15%; }
+  body div#container #content #main_page #resume_sections #education { display: inline-block; float: unset; height: 100%; width: 34%; }
+  body div#container #content #main_page #resume_sections #education .education { margin: auto; width: 80%; }
+  body div#container #content #main_page #resume_sections #education .education:last-child .education_detail ul { margin-bottom: 6.5rem; }
+  body div#container #content #main_page #resume_sections #education .education:nth-child(2n) { float: none; }
+  body div#container #content #main_page #resume_sections #education .education:nth-child(2n+1) { float: none; }
+  body div#container #content #main_page #resume_sections #experience { display: inline-block; float: right; height: 100%; margin-top: 0rem; width: 33%; }
+  body div#container #content #main_page #resume_sections #experience .experience { margin: auto; width: 80%; }
+  body div#container #content #main_page #resume_sections #experience .experience:nth-child(2n) { float: none; }
+  body div#container #content #main_page #resume_sections #experience .experience:nth-child(2n+1) { float: none; } }

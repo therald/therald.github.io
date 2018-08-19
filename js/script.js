@@ -60,19 +60,21 @@ function begin() {
 		var closeButton = document.getElementById("close_hamburger_menu");
 		buttonClicked(e, closeButton);
 
-		var accordionButtons = document.getElementsByClassName("accordion_button");
-		for (var i = 0; i < accordionButtons.length; i++) {
-		    accordionButtons[i].addEventListener("click", function() {
-		        this.classList.toggle("active");
+		setTimeout(function() {
+			var accordionButtons = document.getElementsByClassName("accordion_button");
+			for (var i = 0; i < accordionButtons.length; i++) {
+			    accordionButtons[i].addEventListener("click", function() {
+			        this.classList.toggle("active");
 
-		        var panel = this.nextElementSibling;
-		        if (panel.style.display === "block") {
-		            panel.style.display = "none";
-		        } else {
-		            panel.style.display = "block";
-		        }
-		    });
-		}
+			        var panel = this.nextElementSibling;
+			        if (panel.style.display === "block") {
+			            panel.style.display = "none";
+			        } else {
+			            panel.style.display = "block";
+			        }
+			    });
+			}
+		}, 1000);
 	};
 
 	return false;

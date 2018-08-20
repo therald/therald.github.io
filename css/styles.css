@@ -117,6 +117,7 @@ body {
   font-family: monospace, sans-serif;
   font-size: 16px;
 }
+
 body div#container {
   padding: 0px;
   height: 100vh;
@@ -127,6 +128,7 @@ body div#container {
   position: relative;
   width: 100%;
 }
+
 body div#container #content {
   height: 100%;
   width: 100%;
@@ -135,23 +137,29 @@ body div#container #content {
   position: absolute;
   z-index: 0;
 }
+
 body div#container #content #main_page {
   height: 100%;
   width: 100%;
 }
+
 body div#container #content #main_page #about_img_div {
   background-color: #003400;
   height: 40vh;
 }
+
 body div#container #content #main_page #about_description {
   padding: 1.5rem;
 }
+
 body div#container #content #main_page #about_description h1 {
   font-size: 2.5rem;
 }
+
 body div#container #content #main_page #about_description p {
   margin-top: 1rem;
 }
+
 body div#container #content #main_page #projects {
   background-color: #DDDDDD;
   height: 100%;
@@ -160,6 +168,7 @@ body div#container #content #main_page #projects {
   padding-top: 0.05rem;
   width: 100%;
 }
+
 body div#container #content #main_page #projects .project {
   background-color: #FFFFFF;
   border-radius: 5%;
@@ -168,36 +177,44 @@ body div#container #content #main_page #projects .project {
   padding: 2rem 4% 2rem 4%;
   width: 92%;
 }
+
 body div#container #content #main_page #projects .project h1 {
   font-size: 1.15rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
   text-align: center;
 }
+
 body div#container #content #main_page #projects .project:last-child {
   margin-bottom: 6.5rem;
 }
+
 body div#container #content #main_page #projects .project .portfolio_image_container {
   margin: auto;
   width: 80%;
 }
+
 body div#container #content #main_page #projects .project .portfolio_image_container a .portfolio_image {
   width: 100%;
 }
+
 body div#container #content #main_page #projects .project .portfolio_link_container {
   width: 80%;
   margin: auto;
   padding-bottom: 1rem;
 }
+
 body div#container #content #main_page #projects .project .portfolio_link_container a {
   text-decoration: none;
 }
+
 body div#container #content #main_page #projects .project .portfolio_link_container a h1 {
   background-color: #DDDDDD;
   border-radius: 5%;
   color: black;
   margin-top: 1rem;
 }
+
 body div#container #content #main_page #resume_sections {
   height: 100%;
   overflow: scroll;
@@ -205,82 +222,104 @@ body div#container #content #main_page #resume_sections {
   padding: 2rem;
   width: 100%;
 }
+
 body div#container #content #main_page #resume_sections #languages {
   width: 100%;
 }
+
 body div#container #content #main_page #resume_sections #languages h1 {
   font-size: 2rem;
 }
+
 body div#container #content #main_page #resume_sections #languages hr {
   margin-right: 2rem;
   margin-top: 0.5rem;
 }
+
 body div#container #content #main_page #resume_sections #languages #languages_grid .badge {
   margin: auto;
   margin-bottom: 1rem;
   width: 80%;
 }
+
 body div#container #content #main_page #resume_sections #languages #languages_grid .badge .language_icon {
   width: 100%;
 }
+
 body div#container #content #main_page #resume_sections #education {
   width: 100%;
 }
+
 body div#container #content #main_page #resume_sections #education h1 {
   font-size: 2rem;
 }
+
 body div#container #content #main_page #resume_sections #education hr {
   margin-right: 2rem;
   margin-top: 0.5rem;
 }
+
 body div#container #content #main_page #resume_sections #education .education {
   width: 100%;
 }
+
 body div#container #content #main_page #resume_sections #education .education .education_detail h1 {
   font-size: 1.25rem;
 }
+
 body div#container #content #main_page #resume_sections #education .education .education_detail h2 {
   font-weight: normal;
 }
+
 body div#container #content #main_page #resume_sections #education .education .education_detail .activities {
   margin-top: 1rem;
 }
+
 body div#container #content #main_page #resume_sections #education .education .education_detail ul {
   margin-left: 1.5rem;
 }
+
 body div#container #content #main_page #resume_sections #education .education .education_logo_container {
   margin: auto;
   margin-bottom: 1rem;
   margin-top: 1rem;
   width: 80%;
 }
+
 body div#container #content #main_page #resume_sections #education .education .education_logo_container img {
   width: 100%;
 }
+
 body div#container #content #main_page #resume_sections #experience {
   margin-top: 2rem;
   width: 100%;
 }
+
 body div#container #content #main_page #resume_sections #experience h1 {
   font-size: 2rem;
 }
+
 body div#container #content #main_page #resume_sections #experience hr {
   margin-right: 2rem;
   margin-top: 0.5rem;
 }
+
 body div#container #content #main_page #resume_sections #experience .experience {
   margin-bottom: 4.5rem;
   width: 100%;
 }
+
 body div#container #content #main_page #resume_sections #experience .experience .experience_logo_container {
   margin: auto;
   margin-bottom: 1rem;
   margin-top: 1rem;
   width: 80%;
 }
+
 body div#container #content #main_page #resume_sections #experience .experience .experience_logo_container img {
   width: 100%;
 }
+
 body div#container #content #main_page #resume_sections #experience .experience .experience_detail .accordion_button {
   background-color: #eee;
   color: #444;
@@ -292,9 +331,11 @@ body div#container #content #main_page #resume_sections #experience .experience 
   outline: none;
   transition: 0.4s;
 }
+
 body div#container #content #main_page #resume_sections #experience .experience .experience_detail .active, body div#container #content #main_page #resume_sections #experience .experience .experience_detail .accordion_button:hover {
   background-color: #ccc;
 }
+
 body div#container #content #main_page #resume_sections #experience .experience .experience_detail .experience_accordion {
   padding: 0 18px;
   background-color: white;
@@ -302,25 +343,31 @@ body div#container #content #main_page #resume_sections #experience .experience 
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
 }
+
 body div#container #content #main_page #resume_sections #experience .experience .experience_detail .experience_accordion ul {
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
+
 body div#container #content #main_page #resume_sections #experience .experience .experience_detail .experience_accordion .last_list {
   margin-bottom: 0rem;
 }
+
 body div#container #content #nav_bar {
   background-color: rgba(0, 52, 0, 0.6);
   height: 4.5rem;
   padding-left: 1rem;
 }
+
 body div#container #content #nav_bar div {
   padding-top: 0.5rem;
 }
+
 body div#container #content #nav_bar div #hamburger_menu {
   width: 3.5rem;
   height: 3.5rem;
 }
+
 body div#container #drawer {
   background-color: #FFFFFF;
   height: 100vh;
@@ -332,45 +379,55 @@ body div#container #drawer {
   -webkit-transition: all .5s, -webkit-transform .5s;
   transition: all .5s, transform .5s;
 }
+
 body div#container #drawer #drawer_content #description {
   margin-top: -1.5rem;
 }
+
 body div#container #drawer #drawer_content #description h1 {
   font-size: 2.25rem;
   margin-top: 0.5rem;
   text-align: center;
 }
+
 body div#container #drawer #drawer_content #description h2 {
   font-size: 1.05rem;
   margin-top: 0.25rem;
   text-align: center;
 }
+
 body div#container #drawer #drawer_content #description #profile_pic {
   border-radius: 50%;
   display: block;
   margin: auto;
   width: 65%;
 }
+
 body div#container #drawer #drawer_content #links {
   margin: 2rem 1.5rem;
 }
+
 body div#container #drawer #drawer_content #links h2 {
   font-size: 2rem;
   margin-top: 1rem;
 }
+
 body div#container #drawer #drawer_content #links h2:hover {
   color: rgba(0, 52, 0, 0.6);
   font-size: 3rem;
 }
+
 body div#container #drawer #drawer_content #top_drawer {
   height: 3.5rem;
   padding-left: 0.75rem;
   padding-top: 0.75rem;
 }
+
 body div#container #drawer #drawer_content #top_drawer div #close_hamburger_menu {
   width: 3.5rem;
   height: 3.5rem;
 }
+
 body div#container #drawer #drawer_footer {
   background-color: rgba(0, 52, 0, 0.6);
   bottom: 0rem;
@@ -379,19 +436,23 @@ body div#container #drawer #drawer_footer {
   position: fixed;
   width: inherit;
 }
+
 body div#container #drawer #drawer_footer #social_icons {
   margin: auto;
   align-items: flex-end;
   text-align: center;
 }
+
 body div#container #drawer #drawer_footer #social_icons .social_div {
   width: 25%;
   display: inline-block;
   text-align: center;
 }
+
 body div#container #drawer #drawer_footer #social_icons .social_div .social_icon {
   width: 3rem;
 }
+
 body div#container #shadow_div {
   background-color: #444444;
   height: 100vh;
@@ -431,6 +492,7 @@ body div#container #shadow_div {
     width: 20rem;
   }
 }
+
 @media only screen and (min-width: 35rem) {
   body div#container #content #main_page #about_img_div {
     height: 60vh;
@@ -478,6 +540,7 @@ body div#container #shadow_div {
     float: left;
   }
 }
+
 @media screen and (min-width: 60rem) {
   body div#container #content {
     background-color: white;

@@ -1,6 +1,13 @@
 body{
+    // add background image
+
     div#container {
         #content {
+            background-color: white;
+            border-shadow: 0 0 10px #000000;
+            max-width: 80rem;
+            margin: 2rem auto;
+
             #main_page {
                 #about_img_div {
                     height: 100vh;

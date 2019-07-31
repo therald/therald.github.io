@@ -1,13 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<title>Taylor R Herald</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<!--Open Graph-->
+		<meta property="og:image" content="img/icons/icon-96x96.png">
+		<meta property="og:title" content="Taylor R Herald" />
+		<meta name="author" content="Taylor Herald">
+		<meta property="og:description" content="This is a portfolio site." />
+		<meta property="og:url" content="therald.github.io" />
+		<meta property="og:site_name" content="Taylor R Herald" />
+		<meta property="og:type" content="Taylor R Herald" />
 
+		<!-- Google Knowledge Graph card -->
+		<script type='application/ld+json'>
+			{
+				"@context": "http://www.schema.org",
+				"@type": "Taylor R Herald",
+				"name": "Taylor R Herald",
+				"url": "therald.github.io",
+				"logo": "therald.github.io/img/icons/icon-96x96.png",
+				"description": "This is a portfolio site."
+			}
+		</script>
+
+		<!--Main Stylesheet-->
 		<link rel="stylesheet" type="text/css" href="public/css/styles.css">
-		<link rel="manifest" href="public/manifest.json">
-		<script src="/sw.js"></script>
-		<script src="public/js/script.js"></script>
-		<title>Taylor Herald</title>
+
+		<!--logo-->
+		<link rel="shortcut icon" href="img/icons/icon-96x96.png">
+
+		<!--Web Manifest-->
+		<link rel="manifest" href="/manifest.json">
+
+		<!-- theme-color -->
+		<meta name="theme-color" content="#fff" />
 	</head>
 	<body>
 		<div id="container">
@@ -71,14 +100,16 @@
 				</div>
 			</div>
 		</div>
+		<script src="public/js/script.js"></script>
+		<!-- register service worker -->
 		<script>
-			if (navigator.serviceWorker.controller) {
-				console.log("Active service worker found, no need to register");
-			} else {
-				navigator.serviceWorker.register("/sw.js").then(function(reg) {
-					console.log("Service worker has been registered for scope:" + reg.scope);
+			if ('serviceWorker' in navigator)
+			{
+				window.addEventListener('load', function() {
+		  			navigator.serviceWorker.register('/sw.js')
+		  			.then(function() { console.log("Service Worker Registered, Cheers to PWA Fire!"); });
 				});
-			}
-		</script>
+	  		}
+	  </script>
 	</body>
 </html>

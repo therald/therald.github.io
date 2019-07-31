@@ -1,61 +1,48 @@
-const version = "1.0.0";
+const version = "0.0.1";
 const cacheName = `therald-${version}`;
-
-//This is the service worker with the combined offline experience (Offline page + Offline copy of pages)
-
-//Install stage sets up the offline page in the cache and opens a new cache
-self.addEventListener('install', function(event) {
-  event.waitUntil(preLoad());
-});
-
-var preLoad = function(){
-  console.log('[PWA Builder] Install Event processing');
-  return caches.open(cacheName).then(function(cache) {
-    console.log('[PWA Builder] Cached index and offline page during Install');
-    return cache.addAll(['/Resume/', '/Portfolio', '/']);
-  });
-};
-
+                
+// after a service worker is installed and the user navigates to a different page or 
+// refreshes,the service worker will begin to receive fetch events
+                    
 self.addEventListener('fetch', function(event) {
-  if (event.request.cache === 'only-if-cached' && event.request.mode !== 'same-origin') {
-    return;
-  }
-  console.log('[PWA Builder] The service worker is serving the asset.');
-  event.respondWith(checkResponse(event.request).catch(function() {
-    return returnFromCache(event.request);
+  event.respondWith(caches.open(cacheName).then(function(cache) {
+      return cache.match(event.request).then(function(response) {
+          console.log("cache request: " + event.request.url);
+          var fetchPromise = fetch(event.request).then(function(networkResponse) {           
+              // if we got a response from the cache, update the cache                   
+              console.log("fetch completed: " + event.request.url, networkResponse);
+              if (networkResponse) {
+                  console.debug("updated cached page: " + event.request.url, networkResponse);
+                  cache.put(event.request, networkResponse.clone());
+              }
+              return networkResponse;
+          }, function (event) {   
+              // rejected promise - just ignore it, we're offline!   
+              console.log("Error in fetch()", event);
+              event.waitUntil(
+                  caches.open(cacheName).then(function(cache) { 
+                      return cache.addAll([            
+                          //cache.addAll(), takes a list of URLs, then fetches them from the server
+                          // and adds the response to the cache.           
+                          // add your entire site to the cache- as in the code below; for offline access
+                          // If you have some build process for your site, perhaps that could 
+                          // generate the list of possible URLs that a user might load.               
+                          '/', // do not remove this
+                          '/index.html', //default
+                          '/Resume/', //default
+                          '/Portfolio/' //default
+                      ]);
+                  })
+              );
+          });
+          // respond from the cache, or the network
+          return response || fetchPromise;
+      });
   }));
-  event.waitUntil(addToCache(event.request));
 });
-
-var checkResponse = function(request){
-  return new Promise(function(fulfill, reject) {
-    fetch(request).then(function(response){
-      if(response.status !== 404) {
-        fulfill(response);
-      } else {
-        reject();
-      }
-    }, reject);
-  });
-};
-
-var addToCache = function(request){
-  return caches.open(cacheName).then(function (cache) {
-    return fetch(request).then(function (response) {
-      console.log('[PWA Builder] add page to offline: ' + response.url);
-      return cache.put(request, response);
-    });
-  });
-};
-
-var returnFromCache = function(request){
-  return caches.open(cacheName).then(function (cache) {
-    return cache.match(request).then(function (matching) {
-     if(!matching || matching.status == 404) {
-       return cache.match('index.html');
-     } else {
-       return matching;
-     }
-    });
-  });
-};
+  
+self.addEventListener('install', function(event) {
+  // The promise that skipWaiting() returns can be safely ignored.
+  self.skipWaiting();
+  console.log("Latest version installed!");
+});

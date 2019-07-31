@@ -1,0 +1,179 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+/* apply a natural box layout model to all elements */
+* {
+	-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body{
+	color: $primaryTextColor;
+	font: $defaultFont;
+
+	h1 {
+		font: $headerFont;
+	}
+
+	h2 {
+		font: $subheaderFont;
+	}
+
+	h3 {
+		font: $secondaryFont;
+		color: $secondaryTextColor;
+	}
+
+	nav {
+		background-color: $primaryColorDark;
+		height: 4rem;
+		position: fixed;
+		top: 0;
+		width: 100%;
+
+		div {
+			svg {
+				height: 4rem;
+				padding-left: 0.4rem;
+
+				path {
+					fill: #FFFFFF;
+				}
+			}
+		}
+
+		ul {
+			display: none;
+		}
+	}
+
+	.noScroll {
+		overflow: hidden;
+	}
+
+	.divider {
+		background-color: $secondaryTextColor;
+		height: 0.05rem;
+		margin-top: 0.5rem;
+	}
+
+	#content {
+		height: calc(100vh - 4rem);
+		margin-top: 4rem;
+		overflow-y: scroll;
+		padding: 1rem;
+
+		#about {
+	
+			p {
+				margin-top: 1rem;
+			}
+		}
+
+		#portfolio {
+			margin: 0px;
+		}
+
+		#resume {
+			.exp_title {
+				font-size: 1.25rem;
+				margin-top: 0.5rem;
+			}
+
+			.button {
+				background-color: $primaryColor;
+				border-radius: 0.75rem;
+				color: $white;
+				display: block;
+				margin: auto;
+				margin-bottom: 1rem;
+				padding: 0.75rem;
+				text-align: center;
+				width: fit-content;
+
+				&:active {
+					background-color: $primaryColorDark;
+				}
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+
+			ul {
+				padding-left: 2rem;
+				margin-top: 0.25rem;
+				margin-bottom: 1.5rem;
+			}
+		}
+	}
+
+	#dialog {
+		background-color: $white;
+		display: none;
+		padding: 0rem;
+		left: 0;
+		right: 0;
+		margin: auto;
+		opacity: 0;
+		position: absolute;
+  		top: 50%;
+		transform: translateY(-50%);
+		height: max-content;
+		width: 80%;
+		max-width: 20rem;
+		z-index: -2;
+
+		transition-timing-function: ease-out;
+		-webkit-transition: all .5s, -webkit-transform .5s;
+		transition: all .5s, transform .5s;
+
+		ul {
+			display: unset;
+			list-style: none;
+    		padding: 0;
+			margin: 0;
+
+			li {
+				a {
+					display: block;
+					font: $subheaderFont;
+					padding: 0.5rem 1rem;
+
+					svg {
+						vertical-align: bottom;
+					}
+				}
+
+				.selected {
+					background-color: $primaryColorLight;
+                }
+			}
+		}
+	}
+
+	#shadow_div {
+		background-color: #444444;
+		min-height: calc(100vh - 4rem);
+		padding: 0rem;
+		opacity: 0;
+		position: absolute;
+		width: 100%;
+		z-index: -1;
+
+		transition-timing-function: ease-out;
+		-webkit-transition: all .5s, -webkit-transform .5s;
+		transition: all .5s, transform .5s;
+	}
+}
+
+// Can keep elements from collapsing
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}

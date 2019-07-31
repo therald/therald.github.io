@@ -1,0 +1,13 @@
+body{
+    background-color: $primaryColorLight;
+
+    #container {
+        background-color: $white;
+        margin: auto;
+        width: 60rem;
+
+        nav {
+            width: 60rem;
+        }
+    }
+}

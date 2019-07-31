@@ -1,0 +1,44 @@
+body {
+    nav {
+        div {
+            display: none;
+        }
+
+        ul {
+            display: unset;
+			list-style: none;
+    		padding: 0;
+			margin: 0;
+			
+			li {
+                display: inline-block;
+
+                &:hover {
+                    background-color: $primaryColor;
+                }
+                
+				a {
+                    color: $textIconColor;
+                    display: block;
+                    font: $subheaderFont;
+                    padding: 1.219rem;
+                }
+                
+                .selected {
+                    background-color: $white;
+                    color: $primaryTextColor;
+                }
+			}
+		}
+    }
+
+    #dialog {
+        display: none !important;
+        z-index: -1 !important;
+    }
+
+    #shadow_div {
+        display: none !important;
+        z-index: -2 !important;
+    }
+}

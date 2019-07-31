@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+// Colors
+$primaryColor: rgba(0, 150, 139, 1);
+$primaryColorLight: rgba(178, 223, 219, 1);
+$primaryColorDark: rgba(0, 121, 107, 1);
+
+$accentColor: rgba(255, 193, 7, 1);
+
+$textIconColor: rgba(255, 255, 255, 1);
+$primaryTextColor: rgba(33, 33, 33, 1);
+$secondaryTextColor: rgba(117, 117, 177, 1);
+
+$white: #FFFFFF;
+
+// Text
+$fontFamily: 'Quicksand', sans-serif;
+
+$defaultFont: 1rem $fontFamily;
+$headerFont: bold 2rem $fontFamily;
+$subheaderFont: bold 1.25rem $fontFamily;
+$secondaryFont: bold 0.75rem $fontFamily;
+
+$gutter: 2%;

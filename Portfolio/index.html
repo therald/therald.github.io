@@ -3,10 +3,10 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-		<link rel="stylesheet" type="text/css" href="public/css/styles.css">
-		<link rel="manifest" href="public/manifest.json">
-		<script src="/sw.js"></script>
-		<script src="public/js/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="../public/css/styles.css">
+		<link rel="manifest" href="../public/manifest.json">
+		<script src="../sw.js"></script>
+		<script src="../public/js/script.js"></script>
 		<title>Taylor Herald</title>
 	</head>
 	<body>
@@ -18,9 +18,9 @@
 					</svg>
 				</div>
 				<ul>
-					<li><a class="about selected" href="#">About Me</a></li>
-					<li><a class="portfolio" href="/Portfolio/">Portfolio</a></li>
-					<li><a class="resume" href="/Resume/">Resume</a></li>
+					<li><a class="about" href="../">About Me</a></li>
+					<li><a class="portfolio selected" href="#">Portfolio</a></li>
+					<li><a class="resume" href="../Resume/">Resume</a></li>
 				</ul>
 			</nav>
 
@@ -29,7 +29,7 @@
 			<div id="dialog">
 				<ul>
 					<li>
-						<a class="about selected" href="#">
+						<a class="about" href="../">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 								<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
 								<path d="M0 0h24v24H0z" fill="none"/>
@@ -38,7 +38,7 @@
 						</a>
 					</li>
 					<li>
-						<a class="portfolio" href="/Portfolio/">
+						<a class="portfolio selected" href="#">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 								<path d="M0 0h24v24H0z" fill="none"/><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"/>
 							</svg>
@@ -46,7 +46,7 @@
 						</a>
 					</li>
 					<li>
-						<a class="resume" href="/Resume/">
+						<a class="resume" href="../Resume/">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 								<path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
 								<path d="M0 0h24v24H0z" fill="none"/>
@@ -58,25 +58,29 @@
 			</div>
 
 			<div id="content">
-				<div id="about_img_div">
-					<!-- <img id="about_img" src="about.png" /> -->
-				</div>
-				<div id="about_description">
-					<h1 class="page_header">About Me</h1>
-					<p>
-						I am a programmer and designer with a passion for both. I am currently a graduate student at Washington University in St. Louis,
-						but I have multiple years of experience in industry already. I especially enjoy app creation for Android, iOS, or the Web, but am
-						always looking to try something new.
-					</p>
+				<div id="projects">
+					<div class="project">
+						<div class="portfolio_image_container">
+							<a href="https://therald.github.io/VisibilityGraphs" target="_blank">
+								<img id="visibilityGraph" class="portfolio_image" src="img/visibility_graph.png" alt="visibility_graph" />
+							</a>
+						</div>
+						<div class="portfolio_link_container">
+							<a class="portfolio_link" href="https://therald.github.io/VisibilityGraphs" target="_blank">
+								<h1>Visibility Graph Generator: Web App</h1>
+							</a>
+							<a class="portfolio_link" href="https://github.com/therald/VisibilityGraphs" target="_blank">
+								<h1>See in Github</h1>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<script>
-			if (navigator.serviceWorker.controller) {
-				console.log("Active service worker found, no need to register");
-			} else {
+			if (!navigator.serviceWorker.controller) {
 				navigator.serviceWorker.register("/sw.js").then(function(reg) {
-					console.log("Service worker has been registered for scope:" + reg.scope);
+					console.log("Service worker has been registered for scope: " + reg.scope);
 				});
 			}
 		</script>

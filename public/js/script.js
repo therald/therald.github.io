@@ -11,17 +11,30 @@ function begin() {
 		fadeContent(false);
 	};
 
+	var accordionButtons = document.getElementsByClassName("accordion_button");
+	for (var i = 0; i < accordionButtons.length; i++) {
+		accordionButtons[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+
+			var panel = this.nextElementSibling;
+			if (panel.style.display === "block") {
+				panel.style.display = "none";
+			} else {
+				panel.style.display = "block";
+			}
+		});
+	}
+
 	return false;
 }
 
-function fadeContent(showShadow) {
+function fadeContent(show) {
 	var shadowDiv = document.getElementById("shadow_div");
-	var dialog = document.getElementById("dialog");
-	if (showShadow) {
+	var dialog = document.getElementById("menu_options");
+	if (show) {
 		document.body.style.overflow = "hidden";
 
-		dialog.style.opacity = "1";
-		dialog.style.zIndex = "2";
+		dialog.style.top = "4rem";
 
 		shadowDiv.style.display = "block";
 		shadowDiv.style.opacity = "0.7";
@@ -32,12 +45,12 @@ function fadeContent(showShadow) {
 		}, 100);
 	}
 	else {
+		document.body.style.overflow = null;
+
+		dialog.style.top = "-4rem";
+
 		shadowDiv.style.opacity = null;
 		shadowDiv.style.zIndex = null;
-
-		document.body.style.overflow = null;
-		dialog.style.opacity = null;
-		dialog.style.zIndex = null;
 
 		setTimeout(function() {
 			shadowDiv.style.display = null;

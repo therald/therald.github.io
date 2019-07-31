@@ -12,7 +12,8 @@ html {
 }
 
 body{
-	color: $primaryTextColor;
+	background-color: #1F1F1F;
+	color: $white;
 	font: $defaultFont;
 
 	h1 {
@@ -29,11 +30,12 @@ body{
 	}
 
 	nav {
-		background-color: $primaryColorDark;
+		background-color: #3C4042;
 		height: 4rem;
 		position: fixed;
 		top: 0;
 		width: 100%;
+		z-index: 3;
 
 		div {
 			svg {
@@ -41,7 +43,7 @@ body{
 				padding-left: 0.4rem;
 
 				path {
-					fill: #FFFFFF;
+					fill: #80FC80;
 				}
 			}
 		}
@@ -67,6 +69,10 @@ body{
 		overflow-y: scroll;
 		padding: 1rem;
 
+		.page_header {
+			margin-bottom: 1rem;
+		}
+
 		#about {
 	
 			p {
@@ -74,59 +80,168 @@ body{
 			}
 		}
 
-		#portfolio {
+		#projects {
 			margin: 0px;
+
+			img {
+				width: 100%;
+			}
+
+			.project {
+				margin-bottom: 2rem;
+
+				.portfolio_link_container {
+					a {
+						text-align: center;
+
+						h2 {
+							color: #959595;
+							font-size: 1.5rem;
+							margin-top: 0.5rem;
+							margin-bottom: 0.5rem;
+						}
+
+						&:nth-child(2n + 1) {
+
+							h2 {
+								color: #80FC80 !important;
+							}
+						}
+					}
+				}
+			}
 		}
 
-		#resume {
-			.exp_title {
-				font-size: 1.25rem;
-				margin-top: 0.5rem;
+		#resume_sections {
+
+			#stack {
+				.resume_header {
+					color: #959595;
+					margin-bottom: 1rem;
+				}
+	
+				#stack_grid {
+					text-align: center;
+	
+					.badge {
+						display: inline-block;
+						margin-bottom: 2rem;
+						text-align: center;
+						width: 45%;
+		
+						img {
+							width: 80%;
+						}
+		
+						&:nth-child(2n) {
+							margin-left: 5%;
+						}
+		
+						&::nth-child(2n + 1) {
+							margin-right: 5%;
+						}
+					}
+				}
 			}
 
-			.button {
-				background-color: $primaryColor;
-				border-radius: 0.75rem;
-				color: $white;
-				display: block;
-				margin: auto;
-				margin-bottom: 1rem;
-				padding: 0.75rem;
-				text-align: center;
-				width: fit-content;
+			#education {
 
-				&:active {
-					background-color: $primaryColorDark;
+				.resume_header {
+					color: #959595;
+					margin-bottom: 1rem;
 				}
 
-				&:hover {
-					cursor: pointer;
+				.education {
+					margin-bottom: 2rem;
+
+					.education_logo_container {
+						text-align: center;
+	
+						img {
+							width: 90%;
+						}
+					}
+	
+					.education_detail {
+						margin-top: 1rem;
+
+						h1 {
+							font-size: 1.5rem;
+						}
+						
+						h2 {
+							font-size: 1rem;
+						}
+					}
 				}
 			}
 
-			ul {
-				padding-left: 2rem;
-				margin-top: 0.25rem;
-				margin-bottom: 1.5rem;
+			#experience {
+
+				.resume_header {
+					color: #959595;
+					margin-bottom: 1rem;
+				}
+
+				.experience_logo_container {
+					text-align: center;
+					margin-bottom: 1rem;
+
+					img {
+						width: 90%;
+					}
+				}
+
+				.experience_detail {
+					.accordion_button {
+						background-color: #3C4042;
+						color: $white;
+						cursor: pointer;
+						padding: 18px;
+						width: 100%;
+						text-align: left;
+						border: none;
+						outline: none;
+						transition: 0.4s;
+					}
+
+					.active, .accordion_button:hover {
+						background-color: #80FC80;
+						color: #000000;
+					}
+
+					.experience_accordion {
+						padding: 0 18px;
+						background-color: #1F1F1F;
+						display: none;
+						overflow: hidden;
+						-webkit-overflow-scrolling: touch;
+
+						ul {
+							margin-bottom: 2rem;
+							margin-top: 1rem;
+						}
+
+						.last_list {
+							margin-bottom: 0rem;
+						}
+					}
+				}
 			}
 		}
 	}
 
-	#dialog {
-		background-color: $white;
-		display: none;
+	#menu_options {
+		background-color: #1F1F1F;
 		padding: 0rem;
 		left: 0;
 		right: 0;
-		margin: auto;
-		opacity: 0;
+		top: -4rem;
+		opacity: 1.0;
 		position: absolute;
-  		top: 50%;
-		transform: translateY(-50%);
 		height: max-content;
-		width: 80%;
-		max-width: 20rem;
-		z-index: -2;
+		width: 100%;
+		z-index: 2;
 
 		transition-timing-function: ease-out;
 		-webkit-transition: all .5s, -webkit-transform .5s;
@@ -142,22 +257,33 @@ body{
 				a {
 					display: block;
 					font: $subheaderFont;
+					color: $white;
 					padding: 0.5rem 1rem;
 
 					svg {
 						vertical-align: bottom;
+
+						.main {
+							fill: $white;
+						}
 					}
 				}
 
 				.selected {
-					background-color: $primaryColorLight;
+					color: #80FC80;
+
+					svg {
+						.main {
+							fill: #80FC80;
+						}
+					}
                 }
 			}
 		}
 	}
 
 	#shadow_div {
-		background-color: #444444;
+		background-color: #000000;
 		min-height: calc(100vh - 4rem);
 		padding: 0rem;
 		opacity: 0;

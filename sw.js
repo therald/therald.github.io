@@ -1,4 +1,4 @@
-const version = "1.0.1";
+const version = "1.0.2";
 const cacheName = `therald-${version}`;
                 
 // after a service worker is installed and the user navigates to a different page or 

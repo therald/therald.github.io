@@ -68,7 +68,7 @@ body{
 		margin-top: 4rem;
 		overflow-y: scroll;
 		padding: 1rem;
-		-webkit-overflow-scrolling: touch;
+		// -webkit-overflow-scrolling: touch;
 
 		.page_header {
 			margin-bottom: 1rem;
@@ -238,7 +238,7 @@ body{
 		left: 0;
 		right: 0;
 		top: -4rem;
-		opacity: 0;
+		opacity: 1.0;
 		position: absolute;
 		height: max-content;
 		width: 100%;

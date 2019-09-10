@@ -35,7 +35,6 @@ function fadeContent(show) {
 		document.body.style.overflow = "hidden";
 
 		dialog.style.top = "4rem";
-		dialog.style.opacity = "1.0";
 
 		shadowDiv.style.display = "block";
 		shadowDiv.style.opacity = "0.7";
@@ -48,8 +47,7 @@ function fadeContent(show) {
 	else {
 		document.body.style.overflow = null;
 
-		dialog.style.top = "-4rem";
-		dialog.style.opacity = "0";
+		dialog.style.top = "-8rem";
 
 		shadowDiv.style.opacity = null;
 		shadowDiv.style.zIndex = null;
